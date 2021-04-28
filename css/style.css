@@ -1,0 +1,256 @@
+@charset "UTF-8";
+/* 共通部分
+--------------------------------------*/
+html {
+  font-size: 100%;
+}
+body {
+  font-family: "Yu Gothic Medium","游ゴシック Midium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", sans-serif;
+  line-height: 1.7;
+  color: #432;
+}
+a {
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+}
+nav {
+  width: 30%;
+  height: 100px;
+}
+/* HEADER
+---------------------------------------------*/
+.page-header {
+  background: url(../images/zx-10r.jpg) center / cover;
+  height: 40vh;
+}
+.page-header-shoukai {
+  background: url(../images/cbr1000rr.jpeg) center / cover;
+  height: 40vh;
+}
+.page-header-hayabusa {
+  background: url(../images/hayabusa_3.jpg) center / cover;
+  height: 40vh;
+}
+.wrapper {
+  margin: 0 auto;
+  padding: 0 4%;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  height: 70px;
+  background-color: rgba(12, 12, 12, .5);
+}
+.title {
+  color: #fff;
+  font-family: 'Vollkorn', serif;
+  opacity: 1;
+}
+.title-sub {
+  color: #fff;
+  font-family: 'Vollkorn', serif;
+  opacity: 1;
+  font-size: 1.3rem;
+}
+.jp-morter {
+  margin: 10px 40px;
+}
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  margin-top: 4px;
+  list-style: none;
+  height: 70px;
+  margin-right: 20px;
+}
+.menu {
+  color: #fff;
+}
+.explain {
+  margin: 0 auto;
+  text-align: center;
+  width: 80%;
+  align-items: center;
+}
+.explain_title {
+  margin-top: 20px;
+}
+.explain_sentence {
+  margin-top: 20px;
+}
+.topic {
+  margin: 50px;
+  text-align: center;
+}
+.news {
+  margin: 50px;
+  text-align: center;
+}
+.topic-side {
+  position: relative;
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: center;
+}
+.topic-box {
+  margin-bottom: 20px;
+  height: 300px;
+  width: 300px;
+  background-color: rgba(0, 0, 0, .5);
+}
+footer {
+  height: auto;
+  width: auto;
+  background-color: rgb(20, 20, 20);
+  margin-top: 100px;
+}
+.sub-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  list-style: none;
+  margin: auto auto;
+  width: 80%;
+}
+/* 紹介ページ */
+.shoukai-head {
+  margin-top: 20px;
+  border-bottom: 2px solid rgb(94, 94, 94);
+}
+.shoukai {
+  width: 80%;
+  margin: 0 auto;
+}
+.shoukai-explain {
+  margin-top: 10px;
+}
+.bike-introduction {
+  margin: 20px;
+}
+.bike-images {
+  width: 80%;
+  margin: 0 auto;
+  display: grid;
+  gap: 26px;
+  grid-template-columns: repeat( 3, minmax( 240px, 1fr));
+  align-items: center;
+  justify-items: center;
+}
+.introduction {
+  border-top: 2px solid rgb(94, 94, 94);
+}
+.bike-image {
+  height: auto;
+  width: auto;
+}
+.image-size {
+  height: 300px;
+  width: 400px;
+  object-fit: contain;
+}
+/* hayabusa */
+.hayabusa-head {
+  margin: 0 auto;
+  width: 80%;
+  border-bottom: 2px solid rgb(94, 94, 94);
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.image-size-hayabusa {
+  margin: 0 10% 0 10%;
+  height: auto;
+  width: 80%;
+  padding-bottom: 20px;
+  border-bottom: 2px solid rgb(94, 94, 94);
+}
+.image-size-hayabusa_4 {
+  height: auto;
+  width: 50%;
+  object-fit: contain;
+}
+.hayabusa-layout {
+  margin: 0 auto;
+  margin-top: 20px;
+  display: flex;
+  width: 80%;
+}
+.hayabusa-explain_main {
+  margin: 0 auto;
+  width: 80%;
+}
+.hayabusa-explain {
+  margin: 0 0 0 20px;
+  padding-top: 20px;
+  border-top: 2px solid rgb(94, 94, 94);
+}
+/* モバイル版 */
+@media (max-width: 765px) {
+  .shoukaibun_font {
+    font-size: 1.5rem;
+  }
+  /* HEADER */
+  .main-nav {
+    font-size: 1rem;
+    height: 20px;
+    align-items: center;
+    max-width: calc( 100%);
+    flex-direction: column;
+    margin-top: auto;
+  }
+  .main-nav li {
+    margin: 0px 0;
+  }
+  .topic-box {
+    margin: 0 auto 20px auto;
+  }
+
+  /* HOME */
+  .home-content {
+    margin-top: 20%;
+  }
+  .jp-morter {
+    font-size: 1.3rem;
+    margin-top: 10;
+    margin-bottom: auto;
+  }
+  .menu {
+    font-size: 0.5rem;
+  }
+  .header {
+    flex-direction: column;
+    align-items: center;
+    height: 150px;
+  }
+  .sub-nav {
+    flex-direction: column;
+    margin-bottom: auto;
+    height: 200px;
+    padding: 30px;
+  }
+  .bike-images {
+    grid-template-columns: repeat( auto-fit, minmax( 240px, 1fr));
+  }
+  .hayabusa-layout {
+    flex-direction: column;
+  }
+  .image-size-hayabusa_4 {
+    margin: 0 auto;
+    height: auto;
+    width: 100%;
+    padding-bottom: 20px;
+  }
+  .hayabusa-explain {
+    margin: 0 auto;
+    width: 100%;
+  }
+}
